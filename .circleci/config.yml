@@ -46,4 +46,6 @@ workflows:
     build_and_build2:
        jobs:
          - build
-         - build2
+         - build2:
+              requires:
+               - build
