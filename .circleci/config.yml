@@ -62,3 +62,12 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+          
+     workflows:
+         version: 2
+         one_and_two:
+         jobs:
+           -build1
+           -build2
+          
+          
